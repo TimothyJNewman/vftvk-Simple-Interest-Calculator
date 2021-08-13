@@ -10,7 +10,7 @@ function compute() {
     errorRef.style.display = "block";
   } else {
     if (errorRef.style.display == "block") {
-      errorRef.style.display == "none";
+      errorRef.style.display = "none";
     }
     resultMessage = ""
     resultMessage += "If you deposit <span>" + p + "</span>, \n";
