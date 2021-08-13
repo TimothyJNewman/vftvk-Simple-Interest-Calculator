@@ -12,13 +12,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
-}
-
-#errorMessage {
-  color: orange;
-  font-weight: bold;
-  display: none;
-  animation: fadeIn 1s;
+  border-radius: 10px;
 }
 
 @keyframes fadeIn {
@@ -87,6 +81,11 @@ h1 {
 #submitButton:hover {
   background-color: transparent;
   color: black;
+}
+
+#result {
+  display: none;
+  animation: fadeIn 1s;
 }
 
 #result>span {
