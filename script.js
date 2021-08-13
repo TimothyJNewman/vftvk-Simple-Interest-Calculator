@@ -12,10 +12,6 @@ function compute() {
     res.style.display = "none";
     window.alert("Please enter a positive principle");
     document.getElementById("principal").focus();
-  } else if (!(parseFloat(r) > 0)) {
-    res.style.display = "none";
-    window.alert("Please enter a positive rate");
-    document.getElementById("rate").focus();
   } else {
     resultMessage = ""
     resultMessage += "If you deposit <span>" + p + "</span>, \n";
