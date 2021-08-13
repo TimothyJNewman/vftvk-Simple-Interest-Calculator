@@ -12,7 +12,12 @@ function compute() {
     if (errorRef.style.display == "block") {
       errorRef.style.display == "none";
     }
-    res.innerText = Math.round(p * (r / 100 * t));
+    resultMessage = ""
+    resultMessage += "If you deposit <span>" + p + "</span>, \n";
+    resultMessage += "at an interest rate of <span>" + r + "%</span>. \n";
+    resultMessage += "You will reveive an amount of <span>" + Math.round(p * (r / 100 * t)) + "</span>, \n";
+    resultMessage += "in the year <span>" + t + "</span>";
+    res.innerHTML = resultMessage;
   }
 
 }

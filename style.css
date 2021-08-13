@@ -75,7 +75,7 @@ h1 {
   color: black;
 }
 
-#result {
+#result>span {
   font-weight: bold;
   background-image: linear-gradient(cornflowerblue, cornflowerblue);
   background-position: 0 100%;
