@@ -72,6 +72,10 @@ h1 {
   border-radius: 0.3em;
 }
 
+#years:focus {
+  border: 2px solid palevioletred;
+}
+
 #submitButton {
   background-color: cornflowerblue;
   border: 2px solid cornflowerblue;
