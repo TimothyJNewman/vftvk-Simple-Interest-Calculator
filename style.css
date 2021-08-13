@@ -1,7 +1,84 @@
-body {background-color:white;}
-h1{color:black;}
-
-#form {
-    display: flex;
+body {
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+h1 {
+  color: black;
+}
+
+#wrapper {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+#errorMessage {
+  color: orange;
+  font-weight: bold;
+  display: none;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form>div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.4em 0em;
+  height: 2em;
+  align-items: center;
+}
+
+#form>div>input[type="number"] {
+  border: 2px solid cornflowerblue;
+  padding: 0.5em;
+  border-radius: 0.3em;
+}
+
+#form>div>input:focus {
+  border: 2px solid palevioletred;
+}
+
+#rateWrapper {
+  display: flex;
+  align-items: center;
+}
+
+#selectedRate {
+  margin: 0.3em;
+}
+
+#rate {
+  background-color: cornflowerblue;
+}
+
+#years {
+  border: 2px solid cornflowerblue;
+  padding: 0.5em;
+  border-radius: 0.3em;
+}
+
+#submitButton {
+  background-color: cornflowerblue;
+  border: 2px solid cornflowerblue;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.3em;
+}
+
+#submitButton:hover {
+  background-color: transparent;
+  color: black;
+}
+
+#result {
+  font-weight: bold;
+  background-image: linear-gradient(cornflowerblue, cornflowerblue);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0.15em;
+}
